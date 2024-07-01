@@ -1,0 +1,138 @@
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  cursor: pointer !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+input {
+  padding: 11px;
+  margin: 10px;
+  width: 300px;
+  border-radius: 10px;
+  border: 2px solid #3498db;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #2980b9;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  background: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 20px;
+  background: #34495e;
+  color: #ecf0f1;
+  transition: background 0.3s ease, transform 0.3s ease;
+  text-transform: capitalize;
+}
+
+li:hover {
+  background: #2c3e50;
+  color: black !important;
+  transform: scale(1.05);
+}
+
+table {
+  margin: 20px 0;
+  width: 100%;
+  color: #ecf0f1;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #7f8c8d;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  animation: fadeIn 0.5s ease;
+  background: #34495e;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
